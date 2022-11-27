@@ -21,10 +21,10 @@ folder/directory, so it looks like this:
 
 ```
 config/
-    custom_components/
-	    ecofrog/
-		    __init__.py
-			...
+└ custom_components/
+  └ ecofrog/ 
+    ├ __init__.py
+    └ ...
 ```
 
 The exact method to do this depends on whether you're using a VM
