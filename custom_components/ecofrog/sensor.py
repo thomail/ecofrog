@@ -238,7 +238,7 @@ class Battery(EcoFrogSensor):
         super().__init__(coordinator, config_entry, idx, "Battery", "_battery")
 
     def _get_value(self):
-        return int(self.coordinator.data[self.idx]["Battery"])
+        return float(self.coordinator.data[self.idx]["Battery"])
 
 
 class Temperature(EcoFrogSensor):
