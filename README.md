@@ -1,5 +1,7 @@
 ## Proteus EcoFrog Integration for Home Assistant
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
+
 This custom integration adds support for the _Proteus EcoFrog WLAN_ WiFi
 tank level sensor by Proteus. (or is that E-Sensorix?)
 
