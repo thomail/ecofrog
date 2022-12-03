@@ -5,7 +5,7 @@
 This custom integration adds support for the _Proteus EcoFrog WLAN_ WiFi
 tank level sensor by Proteus. (or is that E-Sensorix?)
 
-![An EcoFrog sensor](https://d2j6dbq0eux0bg.cloudfront.net/images/34815086/1692822375.jpg | width=400)
+<img alt="Photo of an EcoFrog sensor" src="https://d2j6dbq0eux0bg.cloudfront.net/images/34815086/1692822375.jpg" width="400" />
 
 You get access to the information provided by the E-sensorix API:
 
