@@ -70,7 +70,7 @@ class EcoFrogSensor(CoordinatorEntity, SensorEntity):
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, deviceid)},
             name=conf.get("DeviceName", "Ecofrog " + str(deviceid)),
-            config_entries=[self.config_entry.entry_id],
+            # config_entries=[self.config_entry.entry_id],
             manufacturer="E-Sensorix",
             model="EcoFrog",
         )
