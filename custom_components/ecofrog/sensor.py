@@ -9,10 +9,10 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.const import (
-    ELECTRIC_POTENTIAL_VOLT,
+    UnitOfElectricPotential,
     PERCENTAGE,
-    TEMP_FAHRENHEIT,
-    VOLUME_LITERS,
+    UnitOfTemperature,
+    UnitOfVolume,
 )
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.config_entries import ConfigEntry
@@ -126,7 +126,7 @@ class TankVolume(EcoFrogSensor):
     """
 
     _attr_name = "Volume"
-    _attr_native_unit_of_measurement = VOLUME_LITERS
+    _attr_native_unit_of_measurement = UnitOfVolume.LITERS
     _attr_device_class = SensorDeviceClass.VOLUME
     _attr_icon = "mdi:gauge"
 
@@ -168,7 +168,7 @@ class MaxTankVolume(EcoFrogSensor):
     """
 
     _attr_name = "Max Volume"
-    _attr_native_unit_of_measurement = VOLUME_LITERS
+    _attr_native_unit_of_measurement = UnitOfVolume.LITERS
     _attr_device_class = SensorDeviceClass.VOLUME
     _attr_icon = "mdi:gauge-full"
 
@@ -229,7 +229,7 @@ class Battery(EcoFrogSensor):
     """
 
     _attr_name = "Battery"
-    _attr_native_unit_of_measurement = ELECTRIC_POTENTIAL_VOLT
+    _attr_native_unit_of_measurement = UnitOfElectricPotential.VOLT
     _attr_device_class = SensorDeviceClass.VOLTAGE
     _attr_icon = "mdi:battery"
 
@@ -253,7 +253,7 @@ class Temperature(EcoFrogSensor):
     """
 
     _attr_name = "Temperature"
-    _attr_native_unit_of_measurement = TEMP_FAHRENHEIT
+    _attr_native_unit_of_measurement = UnitOfTemperature.FAHRENHEIT
     _attr_device_class = SensorDeviceClass.TEMPERATURE
 
     def __init__(self, coordinator, config_entry, idx):
