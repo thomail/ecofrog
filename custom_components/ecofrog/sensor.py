@@ -127,7 +127,8 @@ class TankVolume(EcoFrogSensor):
 
     _attr_name = "Volume"
     _attr_native_unit_of_measurement = UnitOfVolume.LITERS
-    _attr_device_class = SensorDeviceClass.VOLUME
+    _attr_device_class = SensorDeviceClass.VOLUME_STORAGE
+    _attr_state_class = SensorStateClass.MEASUREMENT
     _attr_icon = "mdi:gauge"
 
     def __init__(self, coordinator, config_entry, idx):
@@ -169,7 +170,8 @@ class MaxTankVolume(EcoFrogSensor):
 
     _attr_name = "Max Volume"
     _attr_native_unit_of_measurement = UnitOfVolume.LITERS
-    _attr_device_class = SensorDeviceClass.VOLUME
+    _attr_device_class = SensorDeviceClass.VOLUME_STORAGE
+    _attr_state_class = SensorStateClass.MEASUREMENT
     _attr_icon = "mdi:gauge-full"
 
     def __init__(self, coordinator, config_entry, idx):
@@ -193,7 +195,7 @@ class TankPercent(EcoFrogSensor):
 
     _attr_name = "Percent Full"
     _attr_native_unit_of_measurement = PERCENTAGE
-    _attr_device_class = SensorDeviceClass.VOLUME
+    _attr_device_class = SensorDeviceClass.BATTERY
 
     def __init__(self, coordinator, config_entry, idx):
         """Pass coordinator to CoordinatorEntity."""
