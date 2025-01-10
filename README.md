@@ -70,6 +70,18 @@ The EcoFrog samples the tank a few times a day, but _seemingly_ only
 uploads fresh data once per 24 hour period. So hourly polls should be
 fine.
 
+## Known Issues
+
+The sensor reports absolute volume available in the tank, and also a
+‘percent full’ measurement which is reported natively as a percent value.
+There is now way in Home Assistant to mark a sensor as reporting volume
+as a percentage (and that is technically correct behaviour). It is,
+however, very convenient to have this percentage sensor available, so the
+integration exposes it. This will cause Home Assistant to issue warnings
+about bad units, but those are harmless. If HA provides something a
+more appropriate sensor class for percentage reporting, the integration will
+be updated to use it instead.
+
 ## Issues? Questions?
 
 This is alpha software of the worst possible type.
