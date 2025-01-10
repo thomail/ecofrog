@@ -1,7 +1,7 @@
 {
   "domain": "ecofrog",
   "name": "EcoFrog",
-  "version": "0.1",
+  "version": "0.4",
   "config_flow": true,
   "documentation": "https://github.com/alexiosc/ecofrog/README.md",
   "requirements": [],
